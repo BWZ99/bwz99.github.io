@@ -4,12 +4,42 @@
 
 body {
   margin: 0;
-  font-family: "Hiragino Kaku Gothic ProN";
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
   text-decoration: none;
 }
+
+nav {
+	font-weight: 800;
+	text-align: center;
+}
+
+.nav-links ul{
+	top: 10;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links ul li{
+	display: inline-block;
+	padding: 0 5rem;
+}
+
+.nav-links ul a{
+	color: #FFFFFF;
+	text-decoration: none;
+	transition: 0.5s;
+}
+
+.nav-links ul a:hover{
+	color: #888888;
+}
+
+
 
 .container {
   width: 100%;
@@ -75,6 +105,9 @@ a {
   opacity: 0.8;
   border-radius: 6px;
   text-align: center;
+
+  align-items: center;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -86,7 +119,7 @@ a {
 }
 
 header {
-  height: 65px;
+  height: 60px;
   width: 100%;
   background-color: rgba(34,49,52,0.9);
   position :fixed;
