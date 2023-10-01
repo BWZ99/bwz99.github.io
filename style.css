@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+#header{
+    height: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+}
+
+#mainnav{
+    margin: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+#mainnav a{
+	color: #000;
+    font-size: 20px;
+}
+
+.panel ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+/* footer */
+
+#footer{
+	clear: both;
+	padding: 50px 10px 50px 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+/* body */
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+/* SEC01 PROFILE
+------------------------------------------------------------*/
+
+#profile {
+    height: auto;
+    padding: 80px 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* SEC02 INTEREST
+------------------------------------------------------------*/
+
+#interest {
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* SEC03 PUBLICATION
+------------------------------------------------------------*/
+
+#publication {
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+/* SEC04 CONTACT
+------------------------------------------------------------*/
+
+#contact {
+    height: auto;
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* link */
+a {
+    color: #0066ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* SNS links */
+.facebook {
+    color: #3b5998;
+    margin-right: 10px;
+}
+
+.linkedin {
+    color: #3F3FE7;
+    margin-right: 10px;
+}
+  
+.youtube{
+    color: #FF0004;
+    margin-right: 10px;
+}
+  
+.twitter {
+    color: #55acee;
+}
+  
+.btn {
+    padding: 8px 24px;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+  
+.btn:hover {
+    opacity: 1;
+}
