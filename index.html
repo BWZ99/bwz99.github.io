@@ -20,10 +20,11 @@
             <p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
             <div class="panel">
                 <ul>
-                    <li><a href="#profile">PROFILE</a></li>
-                    <li><a href="#interest">INTEREST</a></li>
-                    <li><a href="#publication">PUBLICATION</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#profile" class="nav profile">PROFILE</a></li>
+                    <li><a href="#interest" class="nav interest">RESEARCH</a></li>
+                    <li><a href="#publication" class="nav publication">PUBLICATIONS</a></li>
+					<li><a href="#interest" class="nav interest">INTERESTS</a></li>
+                    <li><a href="#contact" class="nav contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,60 +35,122 @@
 		
         <h2>PROFILE</h2>
 		<div class="profile">
+        	<div class="profileDescription">
+				<h3>Biography</h3>
+				<p>Ph.D. Material Science, University of Queensland, 2022 - 2026</p>
+				<p>B.E. Chemical Engineering, University of Queensland, 2018 - 2021</p>
+				<p>For more information, please find my <a href="./documents/CV_Zhang_Bowei.pdf" class="url">CV</a> here.</p>
+        	</div>
 			<div class="profileImage">
             	<img src="./images/profile.png" alt="profile">
         	</div>
-        	<div class="profileDescription">
-				<p>Hello, my name is Bowei.<br>My specialization is semiconductor physics.</p>
-				<h3>Education</h3>
-				<p>Doctor of Philosophy University of Queensland, 2022 - 2026</p>
-				<p>Bachelor of Engineering (Honours) University of Queensland, 2018 - 2021</p>
-				<p>For more information, please find my <a href="./documents/CV_Zhang_Bowei.pdf">CV</a> here.</p>
-        	</div>
+		</div>
+		<div>
+		<p>Hello, my name is Bowei.<br>I like material science.</p>
 		</div>
 		
-        
+		
     </section>
 
     <!-- SEC02 RESERCH INTEREST -->
-    <section id="interest">
-        <h2>INTEREST</h2>
+    <section id="research">
+        <h2>RESEARCH</h2>
 		<div>
-			<li>Thin film transistors</li>
-			<li>Memristors and neuromorphic computing</li>
-			<li>Machine learning</li>
-			<li>Computational fluid dynamics (CFD)</li>
+			<li>Memristors and Artificial Synapses</li>
+			<li>Thin film transistors (TFTs)</li>
+			<li>Light-emitting transistors (FETs)</li>
 		</div>
     </section>
 
     <!-- SEC03 PUBLICATION -->
-    <section id="publication">
-        <h2>PUBLICATION</h2>
-		<div>
-			<ol>
-				<li>Liu, A., Zhu, H. <i>et al.</i> High-performance inorganic metal halide perovskite transistors. <i>Nat Electron</i>, <b>5</b>, 78–83 (2022). <a href="https://doi.org/10.1038/s41928-022-00712-2">https://doi.org/10.1038/s41928-022-00712-2</a></li>
-				<li><b>Zhang, BW</b> et al., High-performance Perovskite Memristors, <i>Nature</i>, 2023</li>
-				<li><b>Zhang, BW</b> et al., High-performance Perovskite 1T1R array, <i>Nature</i>, 2023</li>
+    <section id="publications">
+        <h2>PUBLICATIONS</h2>
+		<div class="portfolio">
+			<ol type="1">
+				<li><b>Zhang, B.W.</b><i>et al.</i> Anisotropic. <i>Adv Funct Mater</i>, <b>5</b>, 78–83 (2022). <a href="https://doi.org/10.1038/s41928-022-00712-2" class="url">https://doi.org/10.1038/s41928-022-00712-2</a></li>
+				<li><b>Zhang, B.W.</b><i>et al.</i> Lead-free Perovskites and Metal Halides for Resistive Switching Memory and Artificial Synapse. <i>Small Struct</i>, 2023. <a href="http://doi.org/10.1002/sstr.202300524" class="url">http://doi.org/10.1002/sstr.202300524</a></li>
+				<li><b>Zhang, BW</b> et al., High-performance Perovskite 1T1R array, <i>Nature</i>, 2023 <a href="https://doi.org/10.1038/s41928-022-00712-2" class="url">https://doi.org/10.1038/s41928-022-00712-2</a></li>
 			</ol>
 		</div>
     </section>
 
-    <!-- SEC04 CONTACT -->
+    <!-- SEC04 RESERCH INTEREST -->
+    <section id="interests">
+	<h2>INTERESTS</h2>
+		<div class="centered">
+			<ul class="tabs">
+				<li class="tab active" onclick="showTab(1)">Teaching</li>
+				<li class="tab" onclick="showTab(2)">CFD</li>
+				<li class="tab" onclick="showTab(3)">ML</li>
+				<li class="tab" onclick="showTab(4)">Illustration</li>
+			</ul>		
+		</div>
+		
+		<div id="tab1" class="tab-content active">
+			<h2>Teaching</h2>
+			<p>I post videos on YouTube to educate on STEM subjects.</p>
+			<div class="youtube">
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+			</div>
+		</div>
+		
+		<div id="tab2" class="tab-content">
+			<h2>Computational Fluid Simulation (CFD)</h2>
+			<p>I like simulating fluids with ANSYS and OpenFOAM.</p>
+			<div class="CFD">
+            	<img src="./images/CFD-sample.jpeg" alt="profile">
+        	</div>			
+		</div>
+		
+		<div id="tab3" class="tab-content">
+			<h2>Machine Learning (ML)</h2>
+			<p>I use Python and MATLAB.</p>
+			<div class="ML">
+				<img src="./images/CFD-sample.jpeg" alt="profile">
+			</div>
+		</div>
+		
+		<div id="tab4" class="tab-content">
+			<h2>Illustration</h2>
+			<p>I started drawing on iPad.</p>
+			<div class="ML">
+				<img src="./images/CFD-sample.jpeg" alt="profile">
+			</div>
+		</div>
+		
+		<script>
+			function showTab(tabNumber) {
+				// Hide all tab contents and remove 'active' class from tabs
+				document.querySelectorAll('.tab-content').forEach(tabContent => {
+					tabContent.classList.remove('active');
+				});
+				document.querySelectorAll('.tab').forEach(tab => {
+					tab.classList.remove('active');
+				});
+
+				// Show the selected tab content and add 'active' class to the clicked tab
+				document.getElementById('tab' + tabNumber).classList.add('active');
+				document.querySelector('.tab:nth-child(' + tabNumber + ')').classList.add('active');
+			}
+		</script>
+		
+    </section>
+
+    <!-- SEC05 CONTACT -->
     <section id="contact">
         <h2>CONTACT</h2>
         <p>For further information, please feel free to reach out to me.</p>
         <div class="btn-wrapper">
             <p class><i class="fa-solid fa-envelope"></i> bw.zhang99 [at] gmail.com</p>
-            <a href="https://www.facebook.com/bwz99/" class="btn facebook"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://github.com/bwz99" class="btn scholar"><i class="fa-brands fa-google-scholar"></i></a>
             <a href="https://www.linkedin.com/in/bowei-zhang/" class="btn linkedin"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://twitter.com/dogineering" class="btn twitter"><i class="fa-brands fa-twitter"></i></a>
 			<a href="https://github.com/bwz99" class="btn github"><i class="fa-brands fa-github"></i></a>
-
+            <a href="https://twitter.com/dogineering" class="btn twitter"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </section>
 
 <footer id="footer">
-    © Bo Wei Zhang<br>Last updated Aug 8, 2023
+	© Bo Wei Zhang<br>Last updated Aug 8, 2023
 </footer>
     
 </body>
