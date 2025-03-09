@@ -1,0 +1,303 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px; /* Added max-width */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Header styles */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mainnav {
+  margin: 20px;
+  text-align: center;
+}
+
+.panel ul li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: inline-block;
+  position: relative;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Section styles */
+section {
+  padding: 80px 20px;
+}
+
+h2 {
+  display: inline-block;
+  border-bottom: 3px solid #333;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+/* Profile section */
+#profile {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.profileDescription {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.profileDescription ul {
+  list-style-position: inside;
+  margin: 10px 0;
+}
+
+.profileImage {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profileImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Research section */
+#research {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+#research li {
+  list-style-position: inside;
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+/* Publication section */
+#publication {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.portfolio ol {
+  text-align: left;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.portfolio li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Interest section */
+#interest {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #eee;
+}
+
+.tab.active {
+  background-color: #fff;
+  border-color: #333;
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.youtube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.CFD img, .ML img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Contact section */
+#contact {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.btn-wrapper {
+  margin-top: 30px;
+}
+
+.btn-wrapper p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 8px 24px;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-align: center;
+  transition: 0.3s;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.scholar { color: #696969; }
+.github { color: #000000; }
+.linkedin { color: #3f3fe7; }
+.twitter { color: #55acee; }
+
+/* Footer */
+#footer {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #fff;
+}
+
+/* Links */
+.url {
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.url:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileImage {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+  }
+
+  .tab {
+    margin-bottom: 10px;
+  }
+}
